@@ -2,6 +2,11 @@
 @import "fonts";
 @import "typography";
 
+@import "./block/footer.scss";
+@import "./block/header.scss";
+@import "./block/nav.scss";
+@import "./block/page.scss";
+
 body {
   background: $c-gray;
 }

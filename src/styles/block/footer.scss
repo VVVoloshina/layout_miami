@@ -1,0 +1,23 @@
+.footer {
+  display: flex;
+  height: 359px;
+  bottom: 0;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 35px;
+  background: url(../images/footer.jpg) no-repeat center / cover;
+
+  &__logo {
+    width: 130.35px;
+    height: 75.77px;
+    left: 2.15%;
+    right: 2%;
+    top: 1.87%;
+    bottom: 3.41%;
+  }
+}
+@media (max-width: 500px) {
+  .footer {
+    height: 206px;
+  }
+}

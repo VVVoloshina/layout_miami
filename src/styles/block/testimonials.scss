@@ -1,0 +1,75 @@
+.testimonials {
+  width: 100%;
+  max-width: 1020px;
+  cursor: pointer;
+
+  &__humans {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  &__persone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 324px;
+  }
+
+  &__photo {
+    margin-top: 30px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    flex-basis: 33.33%;
+    margin-bottom: 32px;
+    border-radius: 50%;
+  }
+
+  &__name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0;
+    color: $blue;
+  }
+
+  &__rang {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #9fadc2;
+  }
+
+  &__inscription {
+    text-align: center;
+  }
+}
+
+@media (max-width: 750px) {
+  .testimonials {
+    &__people {
+      flex-wrap: wrap;
+      justify-content: center;
+      row-gap: 48px;
+    }
+  }
+}
+@media (max-width: 550px) {
+  .testimonials {
+    &__people {
+      margin-top: 32px;
+    }
+
+    &__photo {
+      flex-direction: column;
+      width: 153px;
+      height: 153px;
+      margin-bottom: 28px;
+    }
+
+    &__role {
+      margin: 4px 0;
+    }
+  }
+}

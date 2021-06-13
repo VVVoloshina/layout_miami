@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: blue;
+  background-color: $blue;
   padding-bottom: 5px;
   visibility: hidden;
   transition: 1s;
@@ -86,5 +86,29 @@
     display: block;
     padding-bottom: 8px;
     border-bottom: 1px solid #fff;
+  }
+}
+
+@media (max-width: 550px) {
+  .nav {
+    height: 80vh;
+
+    &__container {
+      padding-top: 125px;
+    }
+
+    &__item {
+      margin-bottom: 24px;
+    }
+
+    &__call-us {
+      margin-top: 32px;
+    }
+  }
+}
+
+@media (max-height: 600px) {
+  .nav {
+    height: 100vh;
   }
 }

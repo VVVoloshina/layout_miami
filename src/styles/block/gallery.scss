@@ -1,0 +1,88 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1020px;
+  cursor: pointer;
+
+  
+  &__photo {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 14px rgba(0, 83, 181, 0.5);
+    }
+  }
+
+  &__photo-1,
+  &__photo-2,
+  &__photo-3 {
+    display: grid;
+    grid-template-rows: 256px;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+
+  &__photo-1 {
+    grid-template-columns: 2fr 1fr;
+    margin-top: 60px;
+  }
+
+  &__photo-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__photo-3 {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  &__inscription {
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__destination {
+    font-size: 16px;
+    line-height: 27px;
+  }
+
+  &__name {
+    color: $blue;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 27px;
+    text-decoration: none;
+  }
+
+  &__view-all {
+    display: flex;
+    width: 150px;
+    height: 56px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid $blue;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: $blue;
+    font-weight: 700;
+    line-height: 14px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    &:hover {
+      color: #fff;
+      background-color: $blue;
+      box-shadow: 0 13px 27px rgba(#0053b5, 0.5);
+    }
+    &:active {
+      box-shadow: 0 8px 14px rgba(0, 83, 181, 0.5);
+    }
+  }
+}

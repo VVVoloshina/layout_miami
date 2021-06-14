@@ -18,15 +18,15 @@
     bottom: 3.41%;
   }
 }
-@media (max-width: 650px) {
-  .footer {
-    height: 180px;
-    padding-bottom: 25px;
-  }
 
-  .footer__logo {
-    width: 80px;
-    height: 48px;
-    padding: 0;
+@media (max-width: 550px) {
+  .footer {
+    height: 206px;
+    padding-bottom: 25px;
+
+    & :first-child {
+      width: 78.6px;
+      height: 45.46px;
+    }
   }
 }

@@ -8,9 +8,9 @@
 
   &__title {
     width: 324px;
-    height: 145px;
     letter-spacing: -1.5px;
   }
+
   &__link {
     color: $blue;
   }
@@ -24,13 +24,7 @@
     margin-bottom: 16px;
     cursor: pointer;
   }
-
-  &__article-paragraf {
-    font-size: 16px;
-    font-weight: normal;
-  }
 }
-
 @media(max-width: 700px) {
   .about {
     flex-direction: column;
@@ -38,7 +32,7 @@
     &__title {
       width: 100%;
       margin-bottom: 48px;
-      &__text {
+      &__article {
         width: 100%;
       }
     }

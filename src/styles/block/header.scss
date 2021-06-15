@@ -44,8 +44,6 @@
   }
 
   &__logo {
-    width: 130.35px;
-    height: 75.77px;
     z-index: 2;
   }
 
@@ -85,9 +83,6 @@
     cursor: pointer;
     color: #fff;
     width: 498px;
-    height: 161px;
-    font-size: 80px;
-    line-height: 80px;
     letter-spacing: -1.5px;
 
     &::before {
@@ -101,16 +96,6 @@
     }
   }
 }
-@media (max-width: 600px) {
-  .header {
-    &__phone {
-      &::before {
-        width: 130px;
-        margin-right: 28px;
-      }
-    }
-  }
-}
 @media (max-width: 550px) {
   .header {
     height: 80vh;
@@ -120,13 +105,17 @@
     }
 
     &__logo {
-      width: 78.6px;
-      height: 45.46px;
+      & > :first-child {
+        width: 78.6px;
+        height: 45.46px;
+      }
     }
 
     &__phone {
-      height: 18px;
-      width: 18px;
+      & > :first-child {
+        width: 18px;
+        height: 18px;
+      }
     }
 
     &__title {
@@ -137,6 +126,7 @@
     }
   }
 }
+
 @media (max-width: 500px) {
   .header {
     &__phone {

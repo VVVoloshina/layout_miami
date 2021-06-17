@@ -6,7 +6,7 @@
   &__container {
     display: flex;
     justify-content: space-between;
-    margin-top: 75px;
+    margin-top: 72px;
   }
 
   &__inform {
@@ -36,6 +36,10 @@
 
   &__text {
     color: #000;
+    &:hover {
+      color:blue;
+      transition-duration: 0.5s;
+    }
   }
 
   &__form {
@@ -52,7 +56,7 @@
   &__textarea {
     height: 144px;
     margin-bottom: 32px;
-    resize: vertical;
+    resize: none;
   }
 
   &__input,
@@ -71,6 +75,7 @@
     }
 
     &:focus {
+      transition: outline 2s;
       outline: none;
       border: 2px solid $blue;
     }

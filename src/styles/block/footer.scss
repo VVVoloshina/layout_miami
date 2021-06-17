@@ -2,21 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  height: 359px;
   padding-bottom: 35px;
-  background-image: url(../images/footer.jpg);
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  &__logo {
-    width: 130.35px;
-    height: 75.77px;
-    left: 2.15%;
-    right: 2%;
-    top: 1.87%;
-    bottom: 3.41%;
-  }
+  height: 359px;
+  background: url(../images/footer.jpg) no-repeat center / cover;
 }
 
 @media (max-width: 550px) {
